@@ -13,10 +13,7 @@
         "symfony/framework-bundle": "4.2.*",
         "symfony/maker-bundle": "^1.11",
         "symfony/orm-pack": "^1.0",
-<<<<<<< HEAD
         "symfony/security-bundle": "4.2.*",
-=======
->>>>>>> 1c0dea9b241bd1034b1b6cb6ea7553f1e79134e0
         "symfony/twig-bundle": "4.2.*",
         "symfony/validator": "4.2.*",
         "symfony/yaml": "4.2.*"
