@@ -97,6 +97,9 @@
         "version": "1.4.0"
     },
     "ocramius/proxy-manager": {
+<<<<<<< HEAD
+        "version": "2.1.1"
+=======
         "version": "2.2.2"
     },
     "psr/cache": {
@@ -110,12 +113,18 @@
     },
     "psr/simple-cache": {
         "version": "1.0.1"
+>>>>>>> 1c0dea9b241bd1034b1b6cb6ea7553f1e79134e0
     },
+    "symfony/asset": {
+        "version": "v4.2.5"
+    },
+<<<<<<< HEAD
+=======
     "symfony/cache": {
-        "version": "v4.2.4"
+        "version": "v4.2.5"
     },
     "symfony/config": {
-        "version": "v4.2.4"
+        "version": "v4.2.5"
     },
     "symfony/console": {
         "version": "3.3",
@@ -130,30 +139,31 @@
             "./config/bootstrap.php"
         ]
     },
-    "symfony/contracts": {
-        "version": "v1.0.2"
-    },
     "symfony/debug": {
-        "version": "v4.2.4"
+        "version": "v4.2.5"
     },
     "symfony/dependency-injection": {
-        "version": "v4.2.4"
+        "version": "v4.2.5"
     },
+>>>>>>> 1c0dea9b241bd1034b1b6cb6ea7553f1e79134e0
     "symfony/doctrine-bridge": {
-        "version": "v4.2.4"
+        "version": "v4.2.5"
     },
     "symfony/dotenv": {
-        "version": "v4.2.4"
+        "version": "v4.2.5"
     },
+<<<<<<< HEAD
+=======
     "symfony/event-dispatcher": {
-        "version": "v4.2.4"
+        "version": "v4.2.5"
     },
     "symfony/filesystem": {
-        "version": "v4.2.4"
+        "version": "v4.2.5"
     },
     "symfony/finder": {
-        "version": "v4.2.4"
+        "version": "v4.2.5"
     },
+>>>>>>> 1c0dea9b241bd1034b1b6cb6ea7553f1e79134e0
     "symfony/flex": {
         "version": "1.0",
         "recipe": {
@@ -166,6 +176,11 @@
             "./.env"
         ]
     },
+    "symfony/form": {
+        "version": "v4.2.5"
+    },
+<<<<<<< HEAD
+=======
     "symfony/framework-bundle": {
         "version": "4.2",
         "recipe": {
@@ -186,10 +201,17 @@
         ]
     },
     "symfony/http-foundation": {
-        "version": "v4.2.4"
+        "version": "v4.2.5"
     },
     "symfony/http-kernel": {
-        "version": "v4.2.4"
+        "version": "v4.2.5"
+    },
+    "symfony/inflector": {
+        "version": "v4.2.5"
+    },
+>>>>>>> 1c0dea9b241bd1034b1b6cb6ea7553f1e79134e0
+    "symfony/intl": {
+        "version": "v4.2.5"
     },
     "symfony/maker-bundle": {
         "version": "1.0",
@@ -200,11 +222,43 @@
             "ref": "fadbfe33303a76e25cb63401050439aa9b1a9c7f"
         }
     },
+    "symfony/options-resolver": {
+        "version": "v4.2.5"
+    },
     "symfony/orm-pack": {
         "version": "v1.0.6"
     },
-    "symfony/polyfill-mbstring": {
-        "version": "v1.10.0"
+    "symfony/polyfill-intl-icu": {
+        "version": "v1.11.0"
+    },
+<<<<<<< HEAD
+    "symfony/security-bundle": {
+        "version": "3.3",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "3.3",
+            "ref": "f8a63faa0d9521526499c0a8f403c9964ecb0527"
+        },
+        "files": [
+            "./config/packages/security.yaml"
+        ]
+    },
+    "symfony/security-core": {
+        "version": "v4.2.5"
+    },
+    "symfony/security-csrf": {
+        "version": "v4.2.5"
+    },
+    "symfony/security-guard": {
+        "version": "v4.2.5"
+    },
+    "symfony/security-http": {
+        "version": "v4.2.5"
+    },
+=======
+    "symfony/property-access": {
+        "version": "v4.2.5"
     },
     "symfony/routing": {
         "version": "4.2",
@@ -221,13 +275,12 @@
             "./config/routes.yaml"
         ]
     },
-<<<<<<< HEAD
+>>>>>>> 1c0dea9b241bd1034b1b6cb6ea7553f1e79134e0
     "symfony/stopwatch": {
-        "version": "v4.2.4"
+        "version": "v4.2.5"
     },
-=======
     "symfony/twig-bridge": {
-        "version": "v4.2.4"
+        "version": "v4.2.5"
     },
     "symfony/twig-bundle": {
         "version": "3.3",
@@ -243,22 +296,22 @@
             "./templates/base.html.twig"
         ]
     },
->>>>>>> 049f0358df756d09b8f61dbcb438a2a4f4d3d590
-    "symfony/var-exporter": {
-        "version": "v4.2.4"
-    },
-    "symfony/yaml": {
-        "version": "v4.2.4"
-    },
 <<<<<<< HEAD
+=======
+    "symfony/var-exporter": {
+        "version": "v4.2.5"
+    },
+>>>>>>> 1c0dea9b241bd1034b1b6cb6ea7553f1e79134e0
+    "symfony/yaml": {
+        "version": "v4.2.5"
+    },
+    "twig/twig": {
+        "version": "v2.7.4"
+    },
     "zendframework/zend-code": {
         "version": "3.3.1"
     },
     "zendframework/zend-eventmanager": {
         "version": "3.2.1"
-=======
-    "twig/twig": {
-        "version": "v2.7.4"
->>>>>>> 049f0358df756d09b8f61dbcb438a2a4f4d3d590
     }
 }
