@@ -23,9 +23,12 @@
 	{# 
 		MENU LATÉRAL GAUCHE
 	#}
-
-<div>{% include 'inc/left.html.twig' %}</div>
-	
+	<div class="container mt-5">
+		<div class="row">
+	{% include 'inc/left.html.twig' %}
+	{% block body %}{% endblock %}
+		</div>
+	</div>
 	{#
 		FOOTER
 	#}
