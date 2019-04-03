@@ -21,6 +21,15 @@ class FormulaireController extends AbstractController
 
         if($request->isMethod('POST') && $form->handleRequest($request)->isValid()){
 
+          
+           $imageName = bin2hex(random_bytes(16));
+           $uploadedFile = $product->getImage(); // renvoie un objet UploadedFile
+           $extension = $uploadedFile->guessExtension();
+           $uploadedFile->move('img/', "$imageName.$extension");
+
+           // mise à jour de la propriété image avec le nouveau nom de l'image
+           $product->setImage("$imageName.$extension");
+
            $manager->persist($product);
            $manager->flush();
         }
