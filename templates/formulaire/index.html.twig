@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello FormulaireController!{% endblock %}
+
+{% block body %}
+
+<div class="col">
+    <div class="row">
+        {{ form_start(form) }}
+
+            {{ form_row(form.name) }}
+            {{ form_row(form.description) }}
+            {{ form_row(form.image) }}
+            {{ form_row(form.price) }}
+
+            <button class="btn btn-primary">Valider</button>
+
+        {{ form_end(form) }}
+    
+    </div>
+</div>
+{% endblock %}
