@@ -9,6 +9,7 @@
 		MISE EN PLACE DE LA FONCTION ASSET
 	#}
 	<link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+	<link rel="stylesheet" href="{{ asset('css/style.css') }}">
 	<title>
 		{% block title %}SHOP.FR | LA RÉFÉRENCE DES FASHIONS VICTIMS{% endblock %}
 	</title>
@@ -20,7 +21,6 @@
 <div>{% include 'inc/nav.html.twig'%}</div>
 <div class="container mt-5">
     <div class="row d-flex justify-content-center">
-
 {% block body %}{% endblock %}
     </div>
 </div>
