@@ -10,5 +10,33 @@
         <div class="col" style="color: red" > <br>
         {% include 'inc/flash.messages.html.twig' %}
         <h1>Soldes du 1er Avril au 18 Avril, Dépêchez-vous ! </h1>
+        
+  </div>
+
+  <div class="row">
+{% for vetement in results %}
+
+      <div class="mt-4 col-lg-4 col-md-6 mb-4">
+        <div class="card h-100">
+          <a href="#"><img class="card-img-top" src="{{ asset('img/' ~ vetement.image) }}"alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#"> {{ vetement.name | capitalize}} </a>
+            </h4>
+            <h5>{{ vetement.price | capitalize}}  </h5>
+            <p class="card-text">{{ vetement.description | capitalize}} </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+          </div>
         </div>
+      </div>
+  {% endfor %}
+    </div>
+
+  </div>
+  <!-- /.col-lg-9 -->
+        
+
+        
       {% endblock %}
