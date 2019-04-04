@@ -51,11 +51,11 @@ class PullController extends AbstractController
     }
 
      /**
-	 * @Route("/chaussures/{id}", name="chaussures")
+	 * @Route("/chaussures", name="chaussures")
 	 */
-    public function chaussures(int $id, ShopRepository $shopRepository):Response
+    public function chaussures(ShopRepository $shopRepository):Response
     {
-        $results = $shopRepository->find($id);
+        $results = $shopRepository->findAll();
 
         return $this->render('pull/chaussures.html.twig', [
 
