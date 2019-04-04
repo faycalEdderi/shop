@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  jeu. 04 avr. 2019 à 15:32
+-- Généré le :  jeu. 04 avr. 2019 à 19:58
 -- Version du serveur :  5.7.19
 -- Version de PHP :  7.1.9
 
@@ -82,24 +82,32 @@ CREATE TABLE IF NOT EXISTS `shop` (
   `category_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `IDX_AC6A4CA212469DE2` (`category_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=37 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Déchargement des données de la table `shop`
 --
 
 INSERT INTO `shop` (`id`, `name`, `price`, `description`, `image`, `category_id`) VALUES
-(5, 'Timberland', '150.00', 'Des bottes de qulités superieur', 'eb3f35ba89eebd97202f5965a694a3e7.jpeg', 3),
-(6, 'Basket Nike', '120.00', 'Des baskets de qualités superieur', '839dedafb7f49ccba8c0be618f3c4eec.jpeg', 3),
-(7, 'Basket Adidas', '110.00', 'Des baskets Adidas de qualités superieur', '33ff96718decfd12e24f68ac6437c745.jpeg', 3),
-(8, 'Pull Nike', '90.00', 'Un pull Nike de qualités superieur', 'd1509d378fd617b3a36c9adf81bbe164.jpeg', 1),
-(9, 'Pull Fila', '70.00', 'Un pull Fila de qualités superieur', 'adbb43c2bf5106add6ebe61681463887.jpeg', 1),
-(10, 'Tshirt denim', '20.00', 'Un t-shirt cool de qualités superieur', '1c84d7776f75a4a6e268730eb8226b4f.webp', 1),
-(11, 'Tshirt Levis', '50.00', 'Un t-shirt confortable de qualités superieur', '561f1b5953f604c385b3acb022e5b289.jpeg', 1),
-(12, 'Tshirt simple', '15.00', 'Un t-shirt bien de qualités superieur', '16957cb50596350241655dd666444c96.jpeg', 1),
-(15, 'Pantalon', '50.00', 'Un pantalon en coton 100%', '0bde63dcea531e8c0f0cdbb45c2d61b2.jpeg', 2),
-(16, 'Jean', '50.00', 'Un jean ultra confort', '09f111f1226210f122800064ad5a0b0f.webp', 2),
-(17, 'Jogging', '60.00', 'Un jogging en coton', '2334cb4c8ffc01001528675e7bb863bb.jpeg', 2);
+(18, 'Basket Adidas', '95.00', 'Basket Adidas ultra confort', '0b4f429ed9a2261aad42eeb4bd900880.jpeg', 3),
+(19, 'Baskets Nike', '125.00', 'Baskets Nike modèle 2019', 'fcd50cbdf5d83d5536c217f3d29c5e55.jpeg', 3),
+(20, 'Timberland', '130.00', 'Chaussures Timberland, ultra résistantes', '7f6b99b0a49bcecfb19b6e1d75365f60.jpeg', 3),
+(21, 'Jean', '150.00', 'Jean en coton 100% made in France', '596cdcdec53e7a0b61a7a79144e62008.webp', 2),
+(22, 'Pantalon Chino', '40.00', 'Pantalon Chino 50% polyester 50% coton', 'f6d6c7c5644068345ee9d2411c00db34.jpeg', 2),
+(23, 'Bas de Jogging', '50.00', 'Jogging 100% coton', '1628d4265e1e792d0a7dd1f3e79e64e1.jpeg', 2),
+(24, 'T-shirt Levis', '25.00', 'T-shirt blanc simple... avec logo Levis qui justifie sont prix assez élevé', '5c78d1e475f46d45dabf745b5b59b8b5.jpeg', 1),
+(25, 'T-shirt Kawaii', '13.00', 'T-shirt Kawaii pour femme ... ou autre...', '7652799c982620df76d683f3b0a15624.webp', 1),
+(26, 'Pull Nike', '50.00', 'Pull a capuche Nike', '7cf652f10f6c95e994a14be1c2ff2711.jpeg', 1),
+(27, 'Pull Fila', '40.00', 'Pull a capuche Fila', '03eabe34693f57cb8d73c3a7df68d59a.jpeg', 1),
+(28, 'T-shirt smile', '14.00', 'T-shirt jaune avec un air narquois', '6f01eac28432318c8a4453e999bd5665.webp', 1),
+(29, 'Jean Femme', '145.00', 'Jean femme made in France', 'c1d28294e5fa929734eb7fb3f9ffb8b0.jpeg', 2),
+(30, 'Jean taille haute', '155.00', 'Jean femme taille haute made in France', '6029cbe6873523a19c5dace2cf8c56a6.jpeg', 2),
+(31, 'Short Denim Femme', '60.00', 'Mini short femme denim', '0e907595a431a764f04032fa70338a0c.jpeg', 2),
+(32, 'Chaussures Minetom', '75.00', 'Chaussures à talon 12 cm', 'a5e8f5b749ca911c0a878d2668295617.jpeg', 3),
+(33, 'Sneakers Femme', '100.00', 'Baskets Nike pour femme', '5ac98cd94fe4e7a6603f3828cf88adf0.webp', 3),
+(34, 'Chaussure Femme', '45.00', 'En Cuir Qualité supérieure', 'bfbccc4069ea55a351962d53a1c26073.jpeg', 3),
+(35, 'Chaussure Homme DOCKSIDES', '65.00', 'Chaussures bateau', '101d70c29877e0ccd66c20b16fafedeb.jpeg', 3),
+(36, 'Pull femme', '75.00', 'Pull design Liza Écru Chasse Maré', '0bd40f6ac98286e797dfc687b2f7e181.jpeg', 1);
 
 -- --------------------------------------------------------
 
