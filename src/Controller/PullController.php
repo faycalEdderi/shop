@@ -43,7 +43,7 @@ class PullController extends AbstractController
     public function bas(ShopRepository $shopRepository):Response
     {
         $results = $shopRepository->findByCategory("bas");
-        dd($results);
+        
         return $this->render('pull/bas.html.twig', [
 
             'results'=>$results
@@ -55,7 +55,7 @@ class PullController extends AbstractController
 	 */
     public function chaussures(ShopRepository $shopRepository):Response
     {
-        $results = $shopRepository->findAll();
+        $results = $shopRepository->findByCategory("chaussures");
 
         return $this->render('pull/chaussures.html.twig', [
 
