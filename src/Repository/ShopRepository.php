@@ -22,19 +22,18 @@ class ShopRepository extends ServiceEntityRepository
     // /**
     //  * @return Shop[] Returns an array of Shop objects
     //  */
-    /*
-    public function findByExampleField($value)
+   
+    public function findByCategory($value)
     {
-        return $this->createQueryBuilder('s')
-            ->andWhere('s.exampleField = :val')
-            ->setParameter('val', $value)
-            ->orderBy('s.id', 'ASC')
-            ->setMaxResults(10)
+        return $this->createQueryBuilder('shop')
+            ->join("shop.category", "category")
+            ->where("category.name=:name")
+            ->setParameter('name', $value)
             ->getQuery()
             ->getResult()
         ;
     }
-    */
+    
 
     /*
     public function findOneBySomeField($value): ?Shop

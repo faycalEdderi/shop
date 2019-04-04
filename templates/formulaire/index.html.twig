@@ -8,10 +8,13 @@
 <h3 class="my-4">AJOUTER UN ARTICLE</h3>
         {{ form_start(form) }}
 
-            {{ form_row(form.name) }}
+            {{ form_label(form.name, "nom : " | capitalize) }}
+            {{ form_widget(form.name)}}
+
             {{ form_row(form.description)}}
             {{ form_row(form.image) }}
             {{ form_row(form.price) }}
+            {{ form_row(form.category) }}
 
             <button class="btn btn-primary">Valider</button>
 

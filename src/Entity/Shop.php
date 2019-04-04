@@ -11,6 +11,14 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Shop
 {
+
+    /**
+     * Many features have one product. This is the owning side.
+     * @ORM\ManyToOne(targetEntity="Category", inversedBy="products")
+     * @ORM\JoinColumn(name="category_id", referencedColumnName="id")
+     */
+    private $category;
+
     /**
      * @ORM\Id()
      * @ORM\GeneratedValue()
@@ -87,6 +95,18 @@ class Shop
     public function setImage($image): self
     {
         $this->image = $image;
+
+        return $this;
+    }
+
+    public function getCategory(): ?Category
+    {
+        return $this->category;
+    }
+
+    public function setCategory(?Category $category): self
+    {
+        $this->category = $category;
 
         return $this;
     }
