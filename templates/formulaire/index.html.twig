@@ -1,15 +1,15 @@
-{% extends 'parent.html.twig' %}
+{% extends 'base.html.twig' %}
 
-{% block title %} Administration{% endblock %}
+{% block title %}SHOP.FR | ADMINISTRATEUR{% endblock %}
 
 {% block body %}
 
 <div class="col-lg-9">
-<h3 class="my-4">Ajouter un article</h3>
+<h3 class="my-4">AJOUTER UN ARTICLE</h3>
         {{ form_start(form) }}
 
             {{ form_row(form.name) }}
-            {{ form_row(form.description) }}
+            {{ form_row(form.description)}}
             {{ form_row(form.image) }}
             {{ form_row(form.price) }}
 
