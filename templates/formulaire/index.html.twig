@@ -11,12 +11,21 @@
             {{ form_label(form.name, "nom : " | capitalize) }}
             {{ form_widget(form.name)}}
 
-            {{ form_row(form.description)}}
-            {{ form_row(form.image) }}
-            {{ form_row(form.price) }}
-            {{ form_row(form.category) }}
+            {{ form_label(form.description, "description : " | capitalize) }}
+            {{ form_widget(form.description)}}
 
-            <button class="btn btn-primary">Valider</button>
+            {{ form_label(form.image, "image : " | capitalize) }}
+            {{ form_widget(form.image)}}
+
+            {{ form_label(form.category, "categorie : " | capitalize) }}
+            {{ form_widget(form.category)}}
+
+            {{ form_label(form.price, "Prix : " | capitalize) }}
+            {{ form_widget(form.price)}}
+
+            
+
+            <button class="btn mt-4 btn-primary">Valider</button>
 
         {{ form_end(form) }}
     
