@@ -27,7 +27,7 @@ class PullController extends AbstractController
         ['name'=>'Heel','price'=>'99','description'=>'Famous','image'=>'44c58a1a32055b11c71c7316734eb27f.jpeg'],
    ];
     /**
-     * @Route("/", name="")
+     * @Route("/", name="homepage")
      */
     
      public function index(){

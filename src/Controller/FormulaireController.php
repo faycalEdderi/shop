@@ -11,7 +11,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 class FormulaireController extends AbstractController
 {
     /**
-     * @Route("/formulaire", name="formulaire")
+     * @Route("/admin/formulaire", name="formulaire")
      */
     public function index(Request $request)
     {
