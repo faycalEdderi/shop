@@ -22,11 +22,11 @@ class RegistrationFormType extends AbstractType
                 'mapped' => false,
                 'constraints' => [
                     new NotBlank([
-                        'message' => 'Please enter a password',
+                        'message' => 'MOT DE PASSE REQUIS',
                     ]),
                     new Length([
                         'min' => 6,
-                        'minMessage' => 'Your password should be at least {{ limit }} characters',
+                        'minMessage' => 'VOTRE MOT DE PASSE DOIT CONTENIR 6 CARACTÈRES MINIMUM',
                         // max length allowed by Symfony for security reasons
                         'max' => 4096,
                     ]),
